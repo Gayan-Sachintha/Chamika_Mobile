@@ -36,7 +36,9 @@ if(!isset($admin_id)){
 <section class="dashboard">
 
    <h1 class="title">dashboard</h1>
-
+   <a onClick="return generateReport()" class="btn btn-success">Generate Report</a>
+   <br>
+   <br>
    <div class="box-container">
 
       <div class="box">
@@ -138,6 +140,11 @@ if(!isset($admin_id)){
 
 
 <!-- custom admin js file link  -->
+<script>
+   function generateReport(){
+      window.location.href = "report-monthly.php?totalPendings=<?=$total_pendings;?>&completedPayments=<?=$total_completed;?>&orderPlaced=<?=$number_of_orders;?>&productsAdded=<?=$number_of_products;?>&normalUsers=<?=$number_of_users;?>&adminUsers=<?=$number_of_admins;?>&totalAccounts=<?=$number_of_account;?>&newMessages=<?=$number_of_messages;?>";
+   }
+</script>
 <script src="js/admin_script.js"></script>
 
 </body>

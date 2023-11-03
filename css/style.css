@@ -94,6 +94,13 @@ section{
    color:var(--black);
    font-size: 4rem;
 }
+.subtitle{
+   text-align: center;
+   margin-bottom: 2rem;
+   text-transform: uppercase;
+   color:var(--black);
+   font-size: 4rem;
+}
 
 .btn,
 .option-btn,

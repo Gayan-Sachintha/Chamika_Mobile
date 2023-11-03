@@ -40,6 +40,7 @@ if(isset($_GET['delete'])){
 <section class="messages">
 
    <h1 class="title"> messages </h1>
+   <a href="report-Messages.php" class="btn btn-success">Generate Report</a>
 
    <div class="box-container">
    <?php

@@ -49,6 +49,8 @@ if(isset($_GET['delete'])){
 <section class="orders">
 
    <h1 class="title">placed orders</h1>
+   <a href="report-ordersPending.php" class="btn btn-success">Generate Report [Pending Orders]</a>
+   <a href="report-ordersSuccess.php" class="btn btn-success">Generate Report [Success Orders]</a>
 
    <div class="box-container">
       <?php
